@@ -3,7 +3,7 @@
 <html lang="en"><!--<![endif]--> 
 	<head>
 		<meta charset="utf-8">
-		<title>Dashboard - Akira</title>
+		<title>个人网站导航</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -15,20 +15,21 @@
 			<div class="navbar">
 				<div class="navbar-inner">
 					<div class="container">
-						<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="#">Akira</a>
+						<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> 
+							<span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="#">Leafspace</a>
 						<div class="nav-collapse">
 							<ul class="nav">
 								<li class="active">
-									<a href="index.html">Dashboard</a>
+									<a href="index.html">监视面板</a>
 								</li>
 								<li>
-									<a href="settings.htm">Account Settings</a>
+									<a href="settings.htm">设置</a>
 								</li>
 								<li>
-									<a href="help.htm">Help</a>
+									<a href="help.htm">帮助</a>
 								</li>
 								<li class="dropdown">
-									<a href="help.htm" class="dropdown-toggle" data-toggle="dropdown">Tours <b class="caret"></b></a>
+									<a href="help.htm" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
 									<ul class="dropdown-menu">
 										<li>
 											<a href="help.htm">Introduction Tour</a>
@@ -61,10 +62,10 @@
 							</form>
 							<ul class="nav pull-right">
 								<li>
-									<a href="profile.htm">@username</a>
+									<a href="profile.htm">用户名</a>
 								</li>
 								<li>
-									<a href="login.htm">Logout</a>
+									<a href="login.htm">注销</a>
 								</li>
 							</ul>
 						</div>
@@ -124,7 +125,7 @@
 				</div>
 				<div class="span9">
 					<h1>
-						Dashboard
+						监视面板
 					</h1>
 					<div class="hero-unit">
 						<h1>
@@ -137,192 +138,37 @@
 							<a href="help.htm" class="btn btn-primary btn-large">Start Tour</a> <a class="btn btn-large">No Thanks</a>
 						</p>
 					</div>
-					<div class="well summary">
-						<ul>
-							<li>
-								<a href="#"><span class="count">3</span> Projects</a>
-							</li>
-							<li>
-								<a href="#"><span class="count">27</span> Tasks</a>
-							</li>
-							<li>
-								<a href="#"><span class="count">7</span> Messages</a>
-							</li>
-							<li class="last">
-								<a href="#"><span class="count">5</span> Files</a>
-							</li>
-						</ul>
-					</div>
+					
 					<h2>
-						Recent Activity
+						消息列表
 					</h2>
-					<table class="table table-bordered table-striped">
+					<ul class="pager">
+						<li class="next" style="float:left;">
+							<input type="text" name="website" id="website" value="192.168.1.1" />
+							<a onclick="getWebsite()" style="margin-left: 20px;">写入网址</a>
+						</li>
+					</ul>
+					<table class="table table-bordered table-striped" id="website-table" name="website-table">
 						<thead>
 							<tr>
 								<th>
-									Project
+									目标网站
 								</th>
 								<th>
-									Client
+									目标网址
 								</th>
 								<th>
-									Type
-								</th>
-								<th>
-									Date
-								</th>
-								<th>
-									View
+									Going
 								</th>
 							</tr>
 						</thead>
-						<tbody>
-							<tr>
-								<td>
-									Nike.com Redesign
-								</td>
-								<td>
-									Monsters Inc
-								</td>
-								<td>
-									New Task
-								</td>
-								<td>
-									4 days ago
-								</td>
-								<td>
-									<a href="#" class="view-link">View</a>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									Nike.com Redesign
-								</td>
-								<td>
-									Monsters Inc
-								</td>
-								<td>
-									New Message
-								</td>
-								<td>
-									5 days ago
-								</td>
-								<td>
-									<a href="#" class="view-link">View</a>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									Nike.com Redesign
-								</td>
-								<td>
-									Monsters Inc
-								</td>
-								<td>
-									New Project
-								</td>
-								<td>
-									5 days ago
-								</td>
-								<td>
-									<a href="#" class="view-link">View</a>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									Twitter Server Consulting
-								</td>
-								<td>
-									Bad Robot
-								</td>
-								<td>
-									New Task
-								</td>
-								<td>
-									6 days ago
-								</td>
-								<td>
-									<a href="#" class="view-link">View</a>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									Childrens Book Illustration
-								</td>
-								<td>
-									Evil Genius
-								</td>
-								<td>
-									New Message
-								</td>
-								<td>
-									9 days ago
-								</td>
-								<td>
-									<a href="#" class="view-link">View</a>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									Twitter Server Consulting
-								</td>
-								<td>
-									Bad Robot
-								</td>
-								<td>
-									New Task
-								</td>
-								<td>
-									16 days ago
-								</td>
-								<td>
-									<a href="#" class="view-link">View</a>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									Twitter Server Consulting
-								</td>
-								<td>
-									Bad Robot
-								</td>
-								<td>
-									New Project
-								</td>
-								<td>
-									16 days ago
-								</td>
-								<td>
-									<a href="#" class="view-link">View</a>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									Twitter Server Proposal
-								</td>
-								<td>
-									Bad Robot
-								</td>
-								<td>
-									Completed Project
-								</td>
-								<td>
-									20 days ago
-								</td>
-								<td>
-									<a href="#" class="view-link">View</a>
-								</td>
-							</tr>
+						<tbody id="table-body">
 						</tbody>
 					</table>
-					<ul class="pager">
-						<li class="next">
-							<a href="activity.htm">More &rarr;</a>
-						</li>
-					</ul>
                     <ul class="pager">
 						<li class="next">
-							More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
+							More Templates <a href="leafspace_zhang@163.com" target="_blank" title="leafspace">leafspace</a> - Collect from 
+							<a href="leafspace_zhang@163.com" title="" target="_blank">leafspace_zhang@163.com</a>
 						</li>
 					</ul>
 				</div>
@@ -331,5 +177,6 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/site.js"></script>
+		<script src="js/user-define.js"></script>
 	</body>
 </html>
