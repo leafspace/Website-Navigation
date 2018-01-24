@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 7 ]><html lang="en" class="ie6 ielt7 ielt8 ielt9"><![endif]--><!--[if IE 7 ]><html lang="en" class="ie7 ielt8 ielt9"><![endif]--><!--[if IE 8 ]><html lang="en" class="ie8 ielt9"><![endif]--><!--[if IE 9 ]><html lang="en" class="ie9"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!--> 
 <html lang="en"><!--<![endif]--> 
 	<head>
@@ -8,6 +8,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link href="css/site.css" rel="stylesheet">
+		<link rel="shortcut icon" href="img/favorite.ico" type="image/x-icon"/>
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	</head>
 	<body>
@@ -31,34 +32,11 @@
 								<li class="dropdown">
 									<a href="help.htm" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
 									<ul class="dropdown-menu">
-										<li>
-											<a href="help.htm">Introduction Tour</a>
-										</li>
-										<li>
-											<a href="help.htm">Project Organisation</a>
-										</li>
-										<li>
-											<a href="help.htm">Task Assignment</a>
-										</li>
-										<li>
-											<a href="help.htm">Access Permissions</a>
-										</li>
-										<li class="divider">
-										</li>
-										<li class="nav-header">
-											Files
-										</li>
-										<li>
-											<a href="help.htm">How to upload multiple files</a>
-										</li>
-										<li>
-											<a href="help.htm">Using file version</a>
-										</li>
 									</ul>
 								</li>
 							</ul>
 							<form class="navbar-search pull-left" action="">
-								<input type="text" class="search-query span2" placeholder="Search" />
+								<input type="text" class="search-query span2" placeholder="查找" />
 							</form>
 							<ul class="nav pull-right">
 								<li>
@@ -77,48 +55,10 @@
 					<div class="well" style="padding: 8px 0;">
 						<ul class="nav nav-list">
 							<li class="nav-header">
-								Akira
+								My
 							</li>
 							<li class="active">
-								<a href="index.htm"><i class="icon-white icon-home"></i> Dashboard</a>
-							</li>
-							<li>
-								<a href="projects.htm"><i class="icon-folder-open"></i> Projects</a>
-							</li>
-							<li>
-								<a href="tasks.htm"><i class="icon-check"></i> Tasks</a>
-							</li>
-							<li>
-								<a href="messages.htm"><i class="icon-envelope"></i> Messages</a>
-							</li>
-							<li>
-								<a href="files.htm"><i class="icon-file"></i> Files</a>
-							</li>
-							<li>
-								<a href="activity.htm"><i class="icon-list-alt"></i> Activity</a>
-							</li>
-							<li class="nav-header">
-								Your Account
-							</li>
-							<li>
-								<a href="profile.htm"><i class="icon-user"></i> Profile</a>
-							</li>
-							<li>
-								<a href="settings.htm"><i class="icon-cog"></i> Settings</a>
-							</li>
-							<li class="divider">
-							</li>
-							<li>
-								<a href="help.htm"><i class="icon-info-sign"></i> Help</a>
-							</li>
-							<li class="nav-header">
-								Bonus Templates
-							</li>
-							<li>
-								<a href="gallery.htm"><i class="icon-picture"></i> Gallery</a>
-							</li>
-							<li>
-								<a href="blank.htm"><i class="icon-stop"></i> Blank Slate</a>
+								<a href="index.htm"><i class="icon-white icon-home"></i> 监控板</a>
 							</li>
 						</ul>
 					</div>
@@ -129,18 +69,15 @@
 					</h1>
 					<div class="hero-unit">
 						<h1>
-							Welcome!
+							欢迎!
 						</h1>
 						<p>
-							To get the most out of Akira start with our 3 minute tour.
-						</p>
-						<p>
-							<a href="help.htm" class="btn btn-primary btn-large">Start Tour</a> <a class="btn btn-large">No Thanks</a>
-						</p>
+							开始您的远程网站目录导航.
+						</p>	
 					</div>
 					
 					<h2>
-						消息列表
+						导航列表
 					</h2>
 					<ul class="pager">
 						<li class="next" style="float:left;">
@@ -148,7 +85,7 @@
 							<a onclick="getWebsite()" style="margin-left: 20px;">写入网址</a>
 						</li>
 					</ul>
-					<table class="table table-bordered table-striped" id="website-table" name="website-table">
+					<table class="table table-bordered table-striped" id="website-table" name="website-table" style"width:80%; margin-right:20px;">
 						<thead>
 							<tr>
 								<th>
@@ -167,7 +104,7 @@
 					</table>
                     <ul class="pager">
 						<li class="next">
-							More Templates <a href="leafspace_zhang@163.com" target="_blank" title="leafspace">leafspace</a> - Collect from 
+							<a href="leafspace_zhang@163.com" target="_blank" title="leafspace">leafspace</a>
 							<a href="leafspace_zhang@163.com" title="" target="_blank">leafspace_zhang@163.com</a>
 						</li>
 					</ul>
